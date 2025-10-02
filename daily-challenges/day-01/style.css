@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: f1;
+  src: url(./iconoplastic.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    hsla(208, 67%, 81%, 1) 0%,
+    rgb(245, 193, 110) 100%,
+    hsla(301, 65%, 83%, 1) 100%
+  );
+}
+body {
+  position: relative; /* important for stacking context */
+  width: 100%;
+  height: 100%;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/shirt.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 37%;
+  z-index: 2; /* sits above #z */
+}
+
+.nav ul li {
+  list-style-type: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 40px;
+  align-items: center;
+}
+.nav-items ul {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+/* ------------LOGO--------------- */
+
+#logo {
+  color: #fff;
+  font-family: f1;
+}
+
+/* ------------NAV ITEMS--------------- */
+
+.nav-items a {
+  font-size: 16px;
+  color: #000;
+}
+
+/* ------------BUTTON--------------- */
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  background: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+/* }----------CONTAINER--------------- */
+
+.service1 {
+  position: absolute;
+  top: 24%;
+  left: 32%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 280px;
+  z-index: 3;
+}
+.service1,
+.service2 p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+#left-image {
+  transform: scaleX(-1);
+}
+.service2 {
+  position: absolute;
+  top: 34%;
+  right: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 280px;
+  z-index: 3;
+}
+
+/* ----------CONTENT--------------- */
+
+.content{
+  margin-top: 180px;
+}
+.star{
+  margin-left: 130px;
+  color: #ffff00;
+}
+.heading {
+  /* margin-top: 200px; */
+  margin-left: 135px;
+  line-height: 110px;
+}
+.heading h1 {
+  font-size: 140px;
+  color: #fdfdff;
+}
+#background {
+  position: relative;
+  z-index: 1;
+}
+h1:not(#background) {
+  position: relative;
+  z-index: 3;
+}
+
+.container{
+  display: flex;
+  justify-content: end;
+}
+.card{
+  position: absolute;
+  top: 55%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #fdfdff94;
+  border-radius: 12px;
+  padding: 120px 20px;
+  gap: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card h2{
+  font-size: 2rem;
+  font-weight: 300;
+}
+.card p{
+  width: 145px;
+  text-align: center;
+}
+
+/* -----------FOOTER----------- */
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(14, 17, 53);
+  padding: 20px;
+}
+.images{
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+.images h2{
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+.images img{
+  height: 50px;
+  border-radius: 8px;
+}
+.footer button{
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  font-size: 17px;
+}
