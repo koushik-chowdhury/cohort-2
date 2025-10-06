@@ -1,0 +1,152 @@
+/* ------------CSS BOILERPLATE--------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #111;
+  color: #fff;
+}
+/* ----------RESET--------- */
+
+.nav-items a {
+  text-decoration: none;
+  position: relative;
+  color: #fff;
+}
+ul li {
+  list-style-type: none;
+}
+
+/* ----------------NAVIGATION--------------- */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.nav-items ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+.nav-items {
+  background-color: #2a2a2a;
+  padding: 10px 20px;
+  border-radius: 16px;
+}
+
+.nav-items li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: yellow; /* matches text color */
+  transition: width 0.3s ease;
+}
+.nav-items li a:hover::after {
+  width: 100%;
+}
+.search{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.search button {
+  color: #fff;
+  border: 1px solid yellow;
+  background: none;
+  border-radius: 16px;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+/* -------------HERO -------------- */
+
+.hero {
+    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#arrow{
+    position: absolute;
+    width: 150px;
+    top: 20%;
+    left: 26%;
+}
+/* -------------HERO left -------------- */
+
+.hero .left-items img {
+  width: 150px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  box-shadow: -2px -2px 0px 0px rgba(255, 255, 0, 1);
+}
+.hero .left-items {
+  width: 280px;
+  padding-left: 80px;
+  padding-top: 180px;
+}
+.hero .left-items p {
+  font-size: 12px;
+}
+/* -------------HERO MIDLLE -------------- */
+.hero .middle-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .middle-items h1 {
+  font-size: 70px;
+  text-align: center;
+  width: 880px;
+}
+.middle-items >img{
+    width: 750px;
+}
+#bold-heading{
+    font-weight: 600;
+}
+/* -------------HERO RIGHT -------------- */
+.right-items img {
+  width: 100px;
+}
+.right-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 60px;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 3px solid yellow;
+  padding-block: 20px;
+}
+.service h3 {
+  font-size: 50px;
+}
+.service p {
+  color: yellow;
+  font-size: 12px;
+}
+.sign {
+  color: yellow;
+}
