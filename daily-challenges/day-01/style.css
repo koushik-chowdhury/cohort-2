@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
   width: 100%;
@@ -127,7 +128,7 @@ button {
 /* ----------CONTENT--------------- */
 
 .content{
-  margin-top: 180px;
+  margin-top: 60px;
 }
 .star{
   margin-left: 130px;
@@ -139,7 +140,7 @@ button {
   line-height: 110px;
 }
 .heading h1 {
-  font-size: 140px;
+  font-size: 120px;
   color: #fdfdff;
 }
 #background {
