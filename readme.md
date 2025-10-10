@@ -1,4 +1,4 @@
-# 📌  Assignments & CSS Challenges
+# 📌 Assignments & CSS Challenges
 
 <!-- Social Media Links -->
 <div align= center>
@@ -8,8 +8,6 @@
 [![Mail Badge](https://img.shields.io/badge/-csakoushik@gmail.com-c0392b?style=flat&labelColor=c0392b&logo=gmail&logoColor=pink)](mailto:csakoushik@gmail.com)&nbsp;&nbsp;
 
 </div>
-
-
 
 Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clones**, and **assignments** from the Full Stack cohort I am currently enrolled in. It includes solutions, projects, and experiments related to **HTML, CSS, JavaScript, and backend technologies**. 🚀
 
@@ -21,14 +19,16 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 │-- 📁 Assignments       # Daily assignments
 │-- 📄 README.md         # Project details and instructions
 ```
+
 > [!TIP]
 > Press **`Ctrl`** on your keyboard, then open any link—it will open in a new tab.
 
 ## 🎨 Daily Challenges
-(`click to visit - Live`) 
 
-- [x] [**Day 1 - Landing Page**](https://koushik-chowdhury.github.io/cohort-2/daily-challenges/day-01/)
+(`click to visit - Live`)
 
+- [x] [**Day 1 - Ecom Landing Page**](https://koushik-chowdhury.github.io/cohort-2/daily-challenges/day-01/)
+- [x] [**Day 2 - NFT Landing Page**](https://koushik-chowdhury.github.io/cohort-2/daily-challenges/day-02/)
 
 ## 🎯 Assignments
 
@@ -40,19 +40,16 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 
 - [x] [**Assignment 3 - Landing Page for Sweater**](https://koushik-chowdhury.github.io/cohort-2/assignments/03/)
 
-
 ## 📝 Projects
 
 🚨 _No Projects added yet. Stay tuned for updates!_ 🚨
 
 ## 🧬 UI-Clone
+
 (`click to visit - Live`)
 
 - [x] [**Buffer**](https://koushik-chowdhury.github.io/Cohort/UI%20Clone/buffer/)
 - [x] [**Bento Grids**](https://koushik-chowdhury.github.io/Cohort/UI%20Clone/Bento-Grids/)
-
-
-
 
 ## 📢 Contributing
 
