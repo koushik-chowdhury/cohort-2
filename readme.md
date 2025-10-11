@@ -39,6 +39,7 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 - [x] [**Assignment 2 - Landing Page for car 🚗**](https://koushik-chowdhury.github.io/cohort-2/assignments/02/)
 
 - [x] [**Assignment 3 - Landing Page for Sweater**](https://koushik-chowdhury.github.io/cohort-2/assignments/03/)
+- [x] [**Assignment 4 - Landing Page for iPhone**](https://koushik-chowdhury.github.io/cohort-2/assignments/04/)
 
 ## 📝 Projects
 
