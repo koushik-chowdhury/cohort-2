@@ -8,16 +8,20 @@ body {
   width: 100%;
   height: 100%;
 }
+html {
+  zoom: 120%;
+}
 h1 {
-  font-size: 90px;
+  font-size: 50px;
   text-align: center;
   color: transparent;
   -webkit-text-stroke: 1px rgb(121, 107, 107);
   font-family: Helvetica, sans-serif;
+
 }
 .container {
   background-color: #3a3a3a;
-  padding: 15px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -25,8 +29,8 @@ h1 {
   overflow: auto;
 }
 .image {
-  width: 270px;
-  height: 319px;
+  width: 240px;
+  height: 309px;
   border-radius: 14px;
   padding: 10px 15px 10px 15px;
   background-color: #1a1a1a;
@@ -44,6 +48,6 @@ h1 {
 .cars .image {
   width: 450px;
 }
-.cars .image:last-child img{
+.cars .image:last-child img {
   object-position: bottom;
 }
