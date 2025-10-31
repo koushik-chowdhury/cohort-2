@@ -40,6 +40,9 @@ Welcome to my repository! This repo contains all my **CSS challenges**, **UI Clo
 
 - [x] [**Assignment 3 - Landing Page for Sweater**](https://koushik-chowdhury.github.io/cohort-2/assignments/03/)
 - [x] [**Assignment 4 - Landing Page for iPhone**](https://koushik-chowdhury.github.io/cohort-2/assignments/04/)
+- [x] [**Assignment 5 - Profile Cards**](https://koushik-chowdhury.github.io/cohort-2/assignments/05/)
+- [x] [**Assignment 6 - Hover Cards**](https://koushik-chowdhury.github.io/cohort-2/assignments/06/)
+- [x] [**Assignment 7 - Carousel**](https://koushik-chowdhury.github.io/cohort-2/assignments/07/)
 
 ## 📝 Projects
 
