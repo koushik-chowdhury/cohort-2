@@ -146,46 +146,46 @@ if (pass.trim() === '') {
 // 11. Allow only 3 attempts to enter correct password
 // If user gets it right early, stop. If not → “Account locked”
 
-// let correctPassword = 'hello i am kousik';
-// let attempts = 0;
-// const maxAttempts = 3;
+let correctPassword = 'hello i am kousik';
+let attempts = 0;
+const maxAttempts = 3;
 
-// while (maxAttempts > attempts) {
-//   let password = prompt('Please enter your passowrd');
-//   console.log(password);
+while (maxAttempts > attempts) {
+  let password = prompt('Please enter your passowrd');
+  console.log(password);
 
-//   if (password === null) {
-//     console.log('You pressed cancel');
-//   } else if (password.trim() === '') {
-//     attempts++;
-//     console.log(`Password field cant remain empty. You have ${maxAttempts - attempts} more chances`);
-//   } else if (password === correctPassword) {
-//     console.log('Access Granted');
-//     break;
-//   } else {
-//     attempts++;
-//     console.log(`Wrong Password, You have ${maxAttempts - attempts} more chances, please try again`);
-//   }
-// }
-// if (attempts === maxAttempts) {
-//   console.log('Account Locked');
-// }
+  if (password === null) {
+    console.log('You pressed cancel');
+  } else if (password.trim() === '') {
+    attempts++;
+    console.log(`Password field cant remain empty. You have ${maxAttempts - attempts} more chances`);
+  } else if (password === correctPassword) {
+    console.log('Access Granted');
+    break;
+  } else {
+    attempts++;
+    console.log(`Wrong Password, You have ${maxAttempts - attempts} more chances, please try again`);
+  }
+}
+if (attempts === maxAttempts) {
+  console.log('Account Locked');
+}
 
 // 12. Ask user for words until they type “stop”. Count how many times they typed “yes”
 // Loop until "stop" is typed. Count "yes".
-// {
-//   const STOP = 'stop';
-//   let count = 0;
-//   while (STOP) {
-//     let words = prompt('Enter anything you want');
-//     if (words.toLocaleLowerCase() === STOP) break;
+{
+  const STOP = 'stop';
+  let count = 0;
+  while (STOP) {
+    let words = prompt('Enter anything you want');
+    if (words.toLocaleLowerCase() === STOP) break;
 
-//     if (words.toLocaleLowerCase() === 'yes') {
-//       count++;
-//     }
-//   }
-//   console.log(`User type yes ${count} time`);
-// }
+    if (words.toLocaleLowerCase() === 'yes') {
+      count++;
+    }
+  }
+  console.log(`User type yes ${count} time`);
+}
 
 // 13. Print numbers divisible by 7 from 1 to 50
 // Use modulo % and loop.
@@ -212,22 +212,22 @@ console.log(sum);
 // 15. Keep asking number until user enters an even number
 // Use while loop. Stop only if input is even.
 
-// {
-//   let num;
-//   while (true) {
-//     num = prompt('Enter any number you want.');
-//     num = Number(num);
-//     if (isNaN(num) || num % 2 === 0) break;
-//   }
-// }
+{
+  let num;
+  while (true) {
+    num = prompt('Enter any number you want.');
+    num = Number(num);
+    if (isNaN(num) || num % 2 === 0) break;
+  }
+}
 
 // 16. Print numbers between two user inputs
 // Input start and end using prompt() → print all between.
 
-// let first = prompt('Write Something')
-// console.log(first)
-// let second = prompt('Write something more')
-// console.log(second)
+let first = prompt('Write Something')
+console.log(first)
+let second = prompt('Write something more')
+console.log(second)
 
 // 17. Print only first 3 odd numbers from 1 to 20
 // Use loop. Stop with break after 3 odd prints.
@@ -242,25 +242,25 @@ for (let i = 0; i <= 20; i++) {
 // 18. Ask user 5 numbers. Count how many are positive
 // Use loop + condition + counter.
 
-// let loop = 5;
-// let counts = 0;
-// while (loop) {
-//   loop -= 1;
-//   let num = prompt('Enter Numbers');
-//   if (num === null) {
-//     console.log('You Pressed Cancel');
-//     break;
-//   }
-//   num = Number(num);
-//   if (isNaN(num)) {
-//     console.log('Please enter number');
-//     break;
-//   }
-//   if (num % 2 === 0) {
-//     counts++;
-//   }
-// }
-// if (counts > 0) console.log(counts);
+let loop = 5;
+let counts = 0;
+while (loop) {
+  loop -= 1;
+  let num = prompt('Enter Numbers');
+  if (num === null) {
+    console.log('You Pressed Cancel');
+    break;
+  }
+  num = Number(num);
+  if (isNaN(num)) {
+    console.log('Please enter number');
+    break;
+  }
+  if (num % 2 === 0) {
+    counts++;
+  }
+}
+if (counts > 0) console.log(counts);
 
 // 19. ATM Simulator – Allow 3 withdrawals
 // Start with ₹1000 balance. Ask withdrawal amount 3 times.
