@@ -63,7 +63,7 @@ document.addEventListener('keydown', function (e) {
   const pressed = e.key;
   playAudio(pressed);
 
-  let keyDiv = document.getElementById(pressed); // ⭐ WORKS
+  let keyDiv = document.getElementById(pressed); 
   if (keyDiv) {
     keyDiv.classList.add('active');
 
