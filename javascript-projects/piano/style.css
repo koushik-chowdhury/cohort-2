@@ -37,9 +37,7 @@ main{
     scale: 0.95;
     background-color: royalblue;
 }
-.switch:active{
-    scale: 0.95;
-}
+
 .piano{
     padding: 10px;
     width: 38%;

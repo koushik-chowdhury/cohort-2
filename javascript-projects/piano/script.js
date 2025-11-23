@@ -1,74 +1,64 @@
 let pianoContainer = document.querySelector('.piano');
-const AUDIOS = [];
-// ----------------------
-// Generating the audios
-// ---------------------
+const AUDIOS = {};
 
-for (let i = 28; i <= 63; i++) {
-  let char = String.fromCharCode(37 + i);
-  let key = {
-    key: char,
-    src: `https://www.musicca.com/files/audio/tools/piano/${i}.mp3`,
-  };
-  AUDIOS.push(key);
+function generateSounds() {
+  for (let i = 28; i <= 63; i++) {
+    let char = String.fromCharCode(37 + i);
+
+    AUDIOS[char] = {
+      key: char,
+      src: `https://www.musicca.com/files/audio/tools/piano/${i}.mp3`,
+      audio: new Audio(`https://www.musicca.com/files/audio/tools/piano/${i}.mp3`),
+      div: null,
+    };
+    AUDIOS[char].audio.load();
+  }
 }
 
-// -----------------------
-// Creating clickable divs
-// ----------------------
+function generateSwitchs() {
+  for (const key in AUDIOS) {
+    let div = (AUDIOS[key].div = document.createElement('div'));
+    div.classList.add('switch');
+    div.textContent = AUDIOS[key].key;
+    div.id = `key-${AUDIOS[key].key}`;
 
-AUDIOS.forEach((sound) => {
-  let div = document.createElement('div');
+    div.addEventListener('pointerdown', function () {
+      playAudio(AUDIOS[key].key);
+    });
+    pianoContainer.appendChild(div);
+  }
+}
 
-  div.classList.add('switch');
-  div.id = sound.key;
-  div.textContent = sound.key;
-
-  // Click listener
-  div.addEventListener('click', function () {
-    playAudio(sound.key);
+function keyBoardListener() {
+  document.addEventListener('keydown', function (event) {
+    let soundKey = event.key;
+    playAudio(soundKey);
   });
-
-  pianoContainer.appendChild(div);
-});
-
-// --------------
-// Audio preload
-// --------------
-
-AUDIOS.forEach((sound) => {
-  sound.audioObj = new Audio(sound.src);
-});
-
-// --------------
-// Playing Audio
-// --------------
-
-function playAudio(pressedKey) {
-  const dot = AUDIOS.find((item) => item.key === pressedKey);
-
-  if (dot) {
-    console.log(dot.key);
-    console.log(dot.src);
-
-    dot.audioObj.currentTime = 0;
-    dot.audioObj.play();
-  }
 }
-// ------------------------------
-// 5. Keyboard listener
-// ------------------------------
+function playAudio(soundKey) {
+  const sound = AUDIOS[soundKey]
+  if (!sound) return
+  sound.audio.currentTime = 0
+  sound.audio.play()
+  highlightKey(sound.div)
+}
 
-document.addEventListener('keydown', function (e) {
-  const pressed = e.key;
-  playAudio(pressed);
+// ----------------------
+function highlightKey(div) {
+  if (!div) return;
 
-  let keyDiv = document.getElementById(pressed); 
-  if (keyDiv) {
-    keyDiv.classList.add('active');
-
+  requestAnimationFrame(() => {
+    div.classList.add('active');
     setTimeout(() => {
-      keyDiv.classList.remove('active');
+      div.classList.remove('active');
     }, 150);
-  }
-});
+  });
+}
+
+function init() {
+  generateSounds();
+  generateSwitchs();
+  keyBoardListener();
+}
+
+init();
