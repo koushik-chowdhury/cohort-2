@@ -11,7 +11,7 @@ button.addEventListener('click', function () {
   let color1 = Math.floor(Math.random() * 255);
   let color2 = Math.floor(Math.random() * 255);
   let color3 = Math.floor(Math.random() * 255);
-console.log(main.clientHeight)
+
   let maxWidth = main.clientWidth;
   let maxHeight = main.clientHeight;
 
@@ -25,6 +25,5 @@ console.log(main.clientHeight)
   div.style.position = 'absolute';
   div.style.backgroundColor = `rgb(${color1},${color2},${color3})`;
 
-    
   main.appendChild(div);
 });
