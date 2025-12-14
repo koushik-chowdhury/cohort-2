@@ -123,8 +123,6 @@ function calculator(num1, num2, operator) {
   if (isNaN(num1) || isNaN(num2)) {
     return `Please enter numbers as your input`;
   }
-  return `Both values are required.`;
-
   return operator === '+'
     ? num1 + num2
     : operator === '*'
@@ -245,3 +243,15 @@ function isPrime(num) {
 }
 let primeCheck = isPrime(4);
 console.log(primeCheck);
+
+
+// map()
+// filter()
+// reduce()
+// find()
+// some()
+// every()
+// sort()
+// splice() & slice()
+// ...spread and rest operators
+// Array.from()
